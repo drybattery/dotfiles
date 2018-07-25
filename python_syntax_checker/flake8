@@ -1,0 +1,13 @@
+[flake8]
+ignore = E126,  # continuation line over-indented for hanging indent
+       \ E128,  # continuation line under-indented for visual indent
+       \ E226,  # missing whitespace around arithmetic operator
+       \ E262,  # inline comment should start with '# '
+       \ E265,  #  block comment should start with '# '
+       \ E266,  # too many leading '#' for block comment
+       \ E402,  # module level import not at top of file
+       \ E501,  # line too long
+       \ E722,  # do not use bare except
+       \ F403,  # unable to detect undefined names
+       \ W503,  # line break before binary operator
+max-line-length = 100

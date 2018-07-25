@@ -1,0 +1,14 @@
+snippet     fun
+abbr        fun! endf
+options     head
+	fun! ${1:#:NAME}(${2:#:args}) abort
+		${0:#:TARGET}
+	endf
+
+snippet     funcommand
+abbr        fun! endf command!
+options     head
+	fun! ${1:#:NAME}(${2:#:args}) abort
+		${0:#:TARGET}
+	endf
+	command! $1 call $1()

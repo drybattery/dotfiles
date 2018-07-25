@@ -1,0 +1,33 @@
+snippet     title
+abbr        # `expand('%:t:r')`
+options     head
+	# `expand('%:t:r')`
+
+snippet     underbar
+abbr        <u>...</u>
+options     head
+	<u>${0:#:TEXT}</u>
+
+snippet     bold
+abbr        **...**
+options     head
+	**${0:#:TEXT}**
+
+snippet     math
+abbr        $...$
+options     head
+	$${0:#:FORMULA}$
+
+snippet     mathmulti
+abbr        $$...$$
+options     head
+	$$
+	${0:#:FORMULA}
+	$$
+
+snippet     table
+abbr        | A | B |...
+options     head
+	| ${1:#:COL1} | ${2:#:COL2} |
+	|:---:|:---:|
+	| ${0}  |    |

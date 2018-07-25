@@ -1,0 +1,21 @@
+snippet     initialscript
+abbr        #!/usr/bin/env python
+options     head
+	#!/usr/bin/env python
+	# -*- coding: utf-8 -*-
+	"""
+	Created on `GetNow()`
+		@file  : `expand('%:t')`
+		@author: `$USER`
+		@brief :${0}
+	"""
+
+snippet     doc
+abbr        """ DOCUMENT """
+options     head
+	""" ${0:DOCUMENT} """
+
+snippet     debugger
+abbr        Pdb().set_trace()
+options     head
+	from IPython.core.debugger import Pdb; Pdb().set_trace()
