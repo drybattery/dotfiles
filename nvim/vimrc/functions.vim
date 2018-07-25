@@ -628,6 +628,7 @@ fun! GetNow() abort
 endf
 
 
+
 fun! Git(...) abort
     " gitコマンドを実行する関数
     let l:cmd = 'git'
