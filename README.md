@@ -6,7 +6,7 @@ bashrc, vimrc, init.vim, etc
 Execute "git clone" command.  
 
 ```bash
-$ git clone https://github.com/szkny/dotfiles.git ~/dotfiles
+$ git clone https://github.com/drybattery/dotfiles.git ~/dotfiles
 ```
 
 ## install  
