@@ -56,6 +56,8 @@ Plug 'jistr/vim-nerdtree-tabs',                 {'on': 'NERDTreeToggle'}
 " Plug 'Shougo/denite.nvim'
 " Plug 'Yggdroot/indentLine'
 " Plug 'vim-scripts/CSApprox'
+Plug 'tyru/open-browser.vim',                   {'for': 'markdown'}
+Plug 'kannokanno/previm',                       {'for': 'markdown'}
 
 if isdirectory('/usr/local/opt/fzf')
     Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'

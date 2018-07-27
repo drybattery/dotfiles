@@ -63,4 +63,5 @@ else
     let g:airline_symbols.readonly = ''
     let g:airline_symbols.linenr = ''
 endif
-
+" previm setting
+let g:previm_open_cmd = 'open -a Safari'

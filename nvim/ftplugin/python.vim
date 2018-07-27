@@ -57,6 +57,7 @@ let b:ale_linters = ['flake8']
 " Default highlight is better than polyglot
 let g:polyglot_disabled = ['python']
 let g:python_highlight_all = 1
+let g:ipdbdebug_map_enabled = 1
 
 
 " function
