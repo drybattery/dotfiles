@@ -17,8 +17,8 @@ endif
 
 
 " mapping
-nno <silent><leader>py :Python<CR>i
-nno <silent><leader>ip :Ipython<CR>i
+nno <silent><leader>py :w<CR>:Python<CR>i
+nno <silent><leader>ip :w<CR>:Ipython<CR>i
 nno <silent><C-p>      :IpdbDebugToggle<CR>
 if exists('*jedi#goto')
     nno <silent> <leader>d :call jedi#goto()<CR>
