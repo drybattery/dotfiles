@@ -12,6 +12,7 @@ nno <silent> <C-s>   :w<CR>
 nno <silent> q       :CloseBufferTab<CR>
 nno <silent> <S-q>   :qall<CR>
 tno <silent> <C-w>   <C-\><C-n><C-w>
+ino <silent> <C-j>   <ESC>o
 
 " tab/window
 nno <silent> <Tab>   :ChangeBuffer next<CR>

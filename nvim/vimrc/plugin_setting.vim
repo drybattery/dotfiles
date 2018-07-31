@@ -165,6 +165,9 @@ let g:netrw_nogx = 1
 nmap <leader>w <Plug>(openbrowser-smart-search)
 vmap <leader>w <Plug>(openbrowser-smart-search)
 
+"" previm like github
+let g:previm_disable_default_css = 1
+let g:previm_custom_css_path = '~/dotfiles/templates/previm/markdown.css'
 
 "" vim-devicons
 " let g:webdevicons_conceal_nerdtree_brackets = 1
