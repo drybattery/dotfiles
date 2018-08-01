@@ -49,7 +49,7 @@
 プロキシの問題でデータセットをダウンロードできない場合の応急処置
 import urllib.request
 # proxy の設定
-proxy_support = urllib.request.ProxyHandler({'http' : 'http://user:pass@10.1.8072:8080/',
+proxy_support = urllib.request.ProxyHandler({'http' : 'http://user:pass@10.1.8.72:8080/',
                                              'https': 'https://user:pass@10.1.8.72:8080/'})
 opener = urllib.request.build_opener(proxy_support)
 urllib.request.install_opener(opener)
