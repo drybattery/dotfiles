@@ -56,7 +56,7 @@ nno <silent> う      u
 nno <silent> お      o
 nno <silent> ｒ      r
 nno <silent> ｊ      gj
-nno <silent> ｋ      gj
+nno <silent> ｋ      gk
 nno <silent> ｌ      l
 nno <silent> ｈ      h
 nno <silent> ｐ      p
