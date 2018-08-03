@@ -6,19 +6,21 @@ scriptencoding utf-8
 fun! s:ChangeBuffer(direction) abort
     " バッファタブを切り替える関数
     " directionにはnextかpreviousを指定する
-    if a:direction ==? 'next' || a:direction ==? 'n'
-        let l:cmd = 'bnext'
-    elseif a:direction ==? 'previous' || a:direction ==? 'p'
-        let l:cmd = 'bprevious'
-    else
-        return
-    endif
-    exe l:cmd
-    let l:termflag = str2nr(buffer_name('%')[0])
-    if l:termflag
-        setlocal nonumber
-    else
-        setlocal number
+    if &buflisted
+        if a:direction ==? 'next' || a:direction ==? 'n'
+            let l:cmd = 'bnext'
+        elseif a:direction ==? 'previous' || a:direction ==? 'p'
+            let l:cmd = 'bprevious'
+        else
+            return
+        endif
+        exe l:cmd
+        let l:termflag = str2nr(buffer_name('%')[0])
+        if l:termflag
+            setlocal nonumber
+        else
+            setlocal number
+        endif
     endif
 endf
 command! -nargs=1 ChangeBuffer call s:ChangeBuffer(<f-args>)
