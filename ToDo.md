@@ -15,6 +15,19 @@
 - https://qiita.com/jiny2001/items/a33693d8b2455059f457
 - http://keiku.hatenablog.jp/entry/2018/07/22/220158
 - http://ni4muraano.hatenablog.com/entry/2017/08/10/101053
+- http://st-hakky.hatenablog.com/entry/2017/12/07/173928
+
+## 2018/08/06
+## 目標
+- 組み合わせ最適化問題
+## 内容
+- AutoEncoderによるノイズ除去を実装
+- 組み合わせ最適化問題  
+    組み合わせ最適化では、数理モデルを定式化する。  
+- keras、かつ自前のデータで学習させようとした(train5000枚、testは200枚ほど)が、  
+    1060ではメモリ不足といわれた(1920*1080からかなり解像度を落としたが意味なし)
+- keras勉強、function APIを用いてのモデル構築を行う。
+## 次の目標
 
 ## 2018/08/03
 ## 目標
@@ -27,7 +40,6 @@
 - DNCNN(Denoising Convolutional Neural Network)  
     畳み込み、Batchnormalization、活性化関数Reluを重ね、最後だけTanhを使う
 - Unetによる人の学習とセグメンテーション
-- 
 
 ## 次の目標
 - カメラの姿勢位置ずれの再現方法を調査(前処理のための)
