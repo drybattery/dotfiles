@@ -17,7 +17,7 @@ endif
 
 
 " mapping
-nno <silent><Enter> :w<CR>:Python<CR>i
+" nno <silent><Enter> :w<CR>:Python<CR>i
 nno <silent><Leader>py :w<CR>:Python<CR>i
 nno <silent><leader>ip :w<CR>:Ipython<CR>i
 nno <silent><C-p>      :IpdbDebugToggle<CR>
